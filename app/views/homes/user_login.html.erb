@@ -1,0 +1,16 @@
+<div class="form-signin">
+    <%= form_with(url: users_login_path, method: :post) do |f| %>
+        <h1 class="h3 mb-3 fw-normal text-center">サインイン</h1>
+        
+        <div class="form-floating">
+            <%= f.email_field :email, class:"form-control", id:"floatingInput", placeholder:"dasfasf" %>
+            <label for="floatingInput">Emailアドレス</label>
+        </div>
+        <div class="form-floating">
+            <%= f.password_field :password, class:"form-control", id:"floatingPassword", placeholder:"dfasf" %>
+            <label for="floatingPassword">パスワード</label>
+        </div>
+        <%= f.submit "ログイン", class:"w-100 btn btn-lg btn-primary" %>
+        <p class="mt-5 mb-3 text-muted" style="text-align: right">&copy; 2022</p>
+    <% end %>
+</div>

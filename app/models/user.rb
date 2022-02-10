@@ -1,0 +1,3 @@
+class User < ApplicationRecord
+    has_secure_password #パスワードを暗号化して保存するにはこの記述が必要 presenceとpasswordとpassword_confirmationの一致のバリデーションも兼ねている
+end

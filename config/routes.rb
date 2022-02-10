@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  root "homes#top"
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+    root "homes#top"
+	get "/login" => "homes#user_login"
+    resources :users
+	post "/users/login" => "users#login"
+	post "/users/logout" => "users#logout"
+  
 end

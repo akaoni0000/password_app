@@ -1,0 +1,12 @@
+<h1>ユーザー詳細</h1>
+<div class="card" style="width: 18rem;">
+    <%= image_tag "no_image.jpg", class:"card-img-top", alt:"画像が表示できませんでした" %>
+    <div class="card-body">
+        <h5 class="card-title"><%= @user.name %></h5>
+        <p class="card-text"><%= @user.email %></p>
+        <%= link_to "編集", edit_user_path(@user.id), class:"btn btn-primary" %>
+    </div>
+    <div>
+        <%= link_to "一覧へ", users_path, class:"btn btn-dark" %>
+    </div>
+</div>

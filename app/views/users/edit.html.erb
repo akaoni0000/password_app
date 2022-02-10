@@ -1,0 +1,11 @@
+<h1>ユーザー編集</h1>
+<%= form_with(model: @user, local: true) do |f| %>
+    <label>名前</label>
+    <%= f.text_field :name %>
+    
+    <label>パスワード</label>
+    <%= f.password_field :password %>
+    <label>パスワード確認</label>
+    <%= f.password_field :password_confirmation %>
+    <%= f.submit "変更", class: "btn btn-success" %>
+<% end %>

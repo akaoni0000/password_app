@@ -62,3 +62,6 @@ gem "pry-byebug"
 
 # 環境変数設定 .envファイルを作成して記述する SECRET_KEY = "test" 呼び出し ENV["SECRET"]
 gem 'dotenv-rails'
+
+#password_digestの値を乱数化
+gem 'bcrypt',  '3.1.12' 
