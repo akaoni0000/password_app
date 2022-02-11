@@ -20,7 +20,11 @@ class UsersController < ApplicationController
     end
 
     def new
-        @user = User.new
+        if @current_user
+            redirect_to users_path
+        else 
+            @user = User.new
+        end
     end
 
     def create

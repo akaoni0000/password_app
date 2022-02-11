@@ -1,0 +1,2 @@
+### webpackerをインストール
+`rails webpacker:install`
